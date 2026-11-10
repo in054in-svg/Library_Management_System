@@ -37,7 +37,7 @@ if __name__ == '__main__':
             case '6':
                 available_books = get_available_books(books)
                 if available_books:
-                    print(available_books)
+                    print('\n'.join(map(str, available_books)))
                 else:
                     print('There is no available books!')
             case '7':
